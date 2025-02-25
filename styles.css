@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background: url('assets/banner.jpg') no-repeat center center/cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+blockquote {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+}
+
+#faq, #blog {
+    padding-top: 60px; /* Điều chỉnh cho phù hợp */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
