@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://bank-backend.onrender.com"; // 🔄 Cập nhật backend online
+const BACKEND_URL = "https://bank-r3wo.onrender.com"; // 🔄 Cập nhật backend online
 
 document.addEventListener("DOMContentLoaded", function () {
     // 🎯 Hiệu ứng cuộn mượt khi click vào các liên kết nội bộ

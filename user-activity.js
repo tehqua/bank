@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://bank-backend.onrender.com"; // 🔄 Cập nhật backend online
+const BACKEND_URL = "https://bank-r3wo.onrender.com"; // 🔄 Cập nhật backend online
 
 async function loadUserActivities() {
     try {
