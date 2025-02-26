@@ -1,6 +1,8 @@
+const BACKEND_URL = "https://bank-backend.onrender.com"; // 🔄 Cập nhật backend online
+
 async function loadUserActivities() {
     try {
-        const response = await fetch("http://localhost:5000/activities");
+        const response = await fetch(`${BACKEND_URL}/activities`); // 🔄 Cập nhật API lấy dữ liệu từ backend online
         const data = await response.json();
         const tableBody = document.getElementById("activity-table");
 

@@ -1,5 +1,7 @@
+const BACKEND_URL = "https://bank-backend.onrender.com"; // 🔄 Cập nhật backend online
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Hiệu ứng cuộn mượt
+    // 🎯 Hiệu ứng cuộn mượt khi click vào các liên kết nội bộ
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
@@ -9,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
 function trackUserActivity(event, element = null, coordinates = null) {
-    fetch("http://localhost:5000/track", {
+    fetch(`${BACKEND_URL}/track`, { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -22,18 +25,18 @@ function trackUserActivity(event, element = null, coordinates = null) {
     }).catch(err => console.error("❌ Tracking error:", err));
 }
 
-// Khi trang web được tải
+// 🎯 Ghi nhận khi trang web tải
 document.addEventListener("DOMContentLoaded", () => {
     trackUserActivity("page_load");
 
-    // Theo dõi khi người dùng click vào các nút hoặc liên kết
+    // 🎯 Theo dõi khi người dùng click vào các nút hoặc liên kết
     document.querySelectorAll("a, button").forEach(element => {
         element.addEventListener("click", (e) => {
             trackUserActivity("click", e.target, { x: e.clientX, y: e.clientY });
         });
     });
 
-    // Theo dõi khi người dùng cuộn trang
+    // 🎯 Theo dõi khi người dùng cuộn trang
     window.addEventListener("scroll", () => {
         trackUserActivity("scroll");
     });
