@@ -41,3 +41,27 @@ document.addEventListener("DOMContentLoaded", () => {
         trackUserActivity("scroll");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const exploreButton = document.getElementById("explore-button");
+
+    if (exploreButton) {
+        exploreButton.addEventListener("click", function() {
+            fetch("http://127.0.0.1:5000/api/explore", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ action: "explore" }) // Gửi dữ liệu đến backend
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Phản hồi từ backend:", data);
+                alert(data.message); // Hiển thị phản hồi từ backend
+            })
+            .catch(error => {
+                console.error("Lỗi:", error);
+            });
+        });
+    } else {
+        console.error("Không tìm thấy nút 'Khám phá ngay'!");
+    }
+});
