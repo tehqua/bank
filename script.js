@@ -42,20 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const exploreButton = document.getElementById("explore-button");
+document.addEventListener("DOMContentLoaded", function () {
+    const exploreButton = document.querySelector('a[href="#services"]');
 
     if (exploreButton) {
-        exploreButton.addEventListener("click", function() {
+        exploreButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
             fetch("http://127.0.0.1:5000/api/explore", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ action: "explore" }) // Gửi dữ liệu đến backend
+                body: JSON.stringify({ action: "explore" }) 
             })
             .then(response => response.json())
             .then(data => {
                 console.log("Phản hồi từ backend:", data);
-                alert(data.message); // Hiển thị phản hồi từ backend
+                alert(data.message);
             })
             .catch(error => {
                 console.error("Lỗi:", error);
