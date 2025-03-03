@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo hiểm tài chính - Ngân hàng VQNU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        .product-banner {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/product6-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .product-detail-img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .highlight-text {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+        .cta-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0d6efd;
+        }
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">VQNU Bank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html#products">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Phản hồi</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Liên hệ</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-2" href="login.html">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="product-banner">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Bảo hiểm tài chính</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Bảo vệ toàn diện cho tương lai tài chính và sức khỏe của bạn</p>
+        </div>
+    </header>
+
+    <!-- Chi tiết sản phẩm -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <img src="assets/product6-large.jpg" class="img-fluid rounded product-detail-img" alt="Bảo hiểm tài chính">
+                <div class="mt-4 p-4 bg-light rounded">
+                    <h4>Ưu đãi đặc biệt</h4>
+                    <p class="highlight-text">Giảm 15% phí bảo hiểm năm đầu tiên khi đăng ký trực tuyến</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <h2>Gói bảo hiểm tài chính VQNU</h2>
+                <p class="lead">Giải pháp bảo vệ toàn diện cho tài sản và sức khỏe, giúp bạn và gia đình an tâm trước mọi rủi ro.</p>
+                
+                <h4 class="mt-4">Đặc điểm nổi bật</h4>
+                <ul class="list-group mt-3">
+                    <li class="list-group-item"><i class="bi bi-check-circle me-2 text-primary"></i> Bảo vệ toàn diện trước các rủi ro tài chính</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle me-2 text-primary"></i> Linh hoạt lựa chọn gói bảo hiểm phù hợp nhu cầu</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle me-2 text-primary"></i> Hỗ trợ y tế toàn cầu với mạng lưới bệnh viện quốc tế</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle me-2 text-primary"></i> Tích hợp tính năng tiết kiệm và đầu tư</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle me-2 text-primary"></i> Thủ tục bồi thường nhanh chóng, đơn giản</li>
+                </ul>
+                
+                <h4 class="mt-4">Các gói bảo hiểm</h4>
+                <table class="table table-bordered mt-3">
+                    <tr>
+                        <td>Bảo hiểm cơ bản</td>
+                        <td>Từ 200.000 VNĐ/tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Bảo hiểm nâng cao</td>
+                        <td>Từ 500.000 VNĐ/tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Bảo hiểm cao cấp</td>
+                        <td>Từ 1.000.000 VNĐ/tháng</td>
+                    </tr>
+                </table>
+                
+                <div class="cta-box mt-4 p-4 rounded">
+                    <h4>Đăng ký tư vấn ngay hôm nay</h4>
+                    <p>Chuyên viên tư vấn sẽ liên hệ trong vòng 24 giờ</p>
+                    <a href="register.html" class="btn btn-primary btn-lg mt-2">Tư vấn miễn phí</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Các sản phẩm liên quan -->
+    <section class="container my-5">
+        <h3 class="text-center mb-4">Sản phẩm liên quan</h3>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card product-card">
+                    <img src="assets/product11.jpg" class="card-img-top" alt="Tiết kiệm giáo dục">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiết kiệm giáo dục</h5>
+                        <p class="card-text">Kế hoạch tiết kiệm dài hạn cho mục tiêu giáo dục.</p>
+                        <a href="product11.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card product-card">
+                    <img src="assets/product12.jpg" class="card-img-top" alt="Quản lý tài sản">
+                    <div class="card-body">
+                        <h5 class="card-title">Quản lý tài sản</h5>
+                        <p class="card-text">Dịch vụ quản lý tài sản chuyên nghiệp.</p>
+                        <a href="product12.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card product-card">
+                    <img src="assets/product3.jpg" class="card-img-top" alt="Tiết kiệm trực tuyến">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiết kiệm trực tuyến</h5>
+                        <p class="card-text">Gửi tiết kiệm online với lãi suất cao.</p>
+                        <a href="product3.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-start">
+                    <h5>VQNU Bank</h5>
+                    <p>Ngân hàng số hàng đầu Việt Nam</p>
+                    <p>Email: contact@vqnu-bank.com</p>
+                    <p>Hotline: 1900 xxxx</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Trang chủ</a></li>
+                        <li><a href="index.html#services" class="text-white">Dịch vụ</a></li>
+                        <li><a href="all-products.html" class="text-white">Sản phẩm</a></li>
+                        <li><a href="index.html#faq" class="text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2025 Ngân hàng VQNU. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Bootstrap JS và Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Khởi tạo AOS
+        AOS.init({
+            easing: 'ease-in-out',
+            duration: 1000,
+            once: true  
+        });
+    </script>
+</body>
+</html>
